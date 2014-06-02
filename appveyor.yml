@@ -21,8 +21,8 @@ environment:
     secure: nEK12zhLpk5oOYjIoSJayw==
 
 install:
-  - echo %nuget_user% : %nuget_password%
-  - echo %nuget_user_2% : %nuget_password_2%
+  - echo %nuget_user% %nuget_password%
+  - echo %nuget_user_2% %nuget_password_2%
   - nuget sources add -Name "Deerso Azure NuGet Server" -Source http://deersobuildserver1.cloudapp.net/httpAuth/app/nuget/v1/FeedService.svc/ -UserName %nuget_user% -Password %nuget_password%
   - nuget sources add -Name "Deerso Appveyor NuGet Server" -Source https://ci.appveyor.com/nuget/wilburz-1bd0xh3y31tw -UserName %nuget_user_2% -Password %nuget_password_2%
   - nuget restore
