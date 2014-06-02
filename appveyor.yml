@@ -15,10 +15,10 @@ environment:
     secure: kcILZ9kY85AEODmx67BKIg==
   nuget_password:
     secure: W6kj49elSGUgt7lIUpkDIw==
-  nuget_user_2: 
-    secure: Jz4iLZI509mwa1T3g5fc3wJehqUHlh269sICufQaxbA=
+  nuget_user_2:
+    secure: v1SJ1wf2KOF9rvVNLockcdttT7enSCLKZov6kSQp5bM=
   nuget_password_2:
-    secure: nEK12zhLpk5oOYjIoSJayw==
+    secure: /KedBzrmS2/ybh/1l2qbMg==
 
 install:
   - echo %nuget_user% %nuget_password%
