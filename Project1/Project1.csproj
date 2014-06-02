@@ -57,6 +57,9 @@
     <Reference Include="Deerso.Domain.Mappings">
       <HintPath>..\packages\Deerso.Domain.Mappings.3.21.0\lib\net45\Deerso.Domain.Mappings.dll</HintPath>
     </Reference>
+    <Reference Include="Deerso.MessageLibrary">
+      <HintPath>..\packages\Deerso.MessageLibrary.1.0.0.0\lib\net45\Deerso.MessageLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Deerso.Payments">
       <HintPath>..\packages\Deerso.Payments.4.2.0\lib\net40\Deerso.Payments.dll</HintPath>
     </Reference>

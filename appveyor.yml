@@ -1,0 +1,43 @@
+#---------------------------------#
+#    environment configuration    #
+#---------------------------------#
+
+# Operating system (build VM template)
+os: Windows Server 2012 R2
+
+# scripts that are called at very beginning, before repo cloning
+init:
+  - git config --global core.autocrlf input
+
+# environment variables
+environment:
+  nuget_user: 
+    secure: kcILZ9kY85AEODmx67BKIg==
+  nuget_password:
+    secure: W6kj49elSGUgt7lIUpkDIw==
+  nuget_user_2: 
+    secure: Jz4iLZI509mwa1T3g5fc3wJehqUHlh269sICufQaxbA=
+  nuget_password_2:
+    secure: nEK12zhLpk5oOYjIoSJayw==
+
+install:
+  - nuget sources add -Name "Deerso Azure NuGet Server" -Source http://deersobuildserver1.cloudapp.net/httpAuth/app/nuget/v1/FeedService.svc/ -UserName %nuget_user% -Password %nuget_password%
+  - nuget sources add -Name "Deerso Appveyor NuGet Server" -Source https://ci.appveyor.com/nuget/wilburz-1bd0xh3y31tw -UserName %nuget_user_2% -Password %nuget_password_2%
+  - nuget restore
+
+
+#---------------------------------#
+#       build configuration       #
+#---------------------------------#
+build: off
+
+#---------------------------------#
+#       tests configuration       #
+#---------------------------------#
+test: off
+
+
+#---------------------------------#
+#     deployment configuration    #
+#---------------------------------#
+deploy: off

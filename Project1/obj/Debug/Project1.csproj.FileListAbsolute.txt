@@ -1,1 +1,2 @@
 c:\users\jfelsinger\Documents\Projects\Project1\Project1\bin\Debug\Project1.exe.config
+C:\Users\jfelsinger\Documents\Projects\appveyor-test\Project1\bin\Debug\Project1.exe.config
